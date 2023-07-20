@@ -29,7 +29,7 @@ else if (passengerAge < 0){
 }
 
 //condizioni per lo sconto
-if(passengerAge < 18){
+if((passengerAge < 18) && (passengerAge > 0)){
     x = underageDiscount
 }
 else if (passengerAge >= 65) {
