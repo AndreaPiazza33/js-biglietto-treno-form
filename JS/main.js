@@ -38,3 +38,17 @@ else if (passengerAge >= 65) {
 else {
     x = 1
 }
+
+//variabile prezzo finale
+
+const ticketPrice = ((kmPrice * passengerKm) * x )
+
+//condizioni prezzo finale
+if ((ticketPrice <= 0) || (isNaN(ticketPrice))){
+    alert (ticketPrice + " non è un risultato valido")
+}
+else {
+  alert( "Il prezzo del tuo biglietto è: " + Math.round(ticketPrice * 100) / 100 )  
+}
+
+
